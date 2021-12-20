@@ -1,0 +1,48 @@
+@import url(//db.onlinewebfonts.com/c/67680f2eb947c5cbd58b40961b4a61e9?family=Apple+SD+Gothic+Neo);
+
+@font-face {
+  font-family: 'Apple SD Gothic Neo';
+  src: url('//db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.eot');
+  src: url('//db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.eot?#iefix')
+      format('embedded-opentype'),
+    url('//db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.woff2')
+      format('woff2'),
+    url('//db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.woff')
+      format('woff'),
+    url('//db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.ttf')
+      format('truetype'),
+    url('//db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.svg#Apple SD Gothic Neo')
+      format('svg');
+}
+/* COMMON */
+body {
+  color: #333;
+  font-size: 16px;
+  /* font-weight: 400; */
+  line-height: 1.4;
+}
+
+img {
+  display: block;
+}
+
+/* HEADER */
+header {
+  background-color: royalblue;
+}
+header .inner {
+  position: relative;
+  width: 1100px;
+  height: 120px;
+  margin: 0 auto;
+  background-color: orange;
+}
+
+header .logo {
+  height: 75px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
