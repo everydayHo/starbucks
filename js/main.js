@@ -18,3 +18,23 @@ searchInputEL.addEventListener('blur', function () {
   searchEL.classList.remove('focused');
   searchInputEL.setAttribute('placeholder', ' ');
 });
+
+const badgeEL = document.querySelector('header .badges');
+
+window.addEventListener(
+  'scroll',
+  _.throttle(function () {
+    if (window.scrollY > 500) {
+      badgeEL.classList.add('active');
+    } else badgeEL.classList.remove('active');
+  }, 300)
+);
+
+const fadeEL = document.querySelectorAll('.visual .fade-in');
+fadeEL.forEach(function (fadeEL, index) {
+  // gsap.to(요소, 지속시간, 옵션)
+  gsap.to(fadeEL, 1, {
+    delay: (index + 1) * 0.7, // 0, 0.7, 1.4, 2.1, 2.7
+    opacity: 1,
+  });
+});
