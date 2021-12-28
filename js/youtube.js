@@ -13,7 +13,7 @@ function onYouTubeIframeAPIReady() {
     videoId: 'An6LvWQuj_8', //최초 재생할 유튜브 영상 ID
     playerVars: {
       autoplay: true,
-      loop: true,
+      loop: 1,
       playlist: 'An6LvWQuj_8', //반복 재생할  유튜브 영상  ID 목록
     },
     events: {

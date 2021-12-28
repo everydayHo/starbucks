@@ -20,7 +20,7 @@ body {
   font-size: 16px;
   /* font-weight: 400; */
   line-height: 1.4;
-  height: 3000px;
+  height: 7000px;
 }
 a {
   text-decoration: none;
@@ -603,8 +603,133 @@ header .badges .badge {
   top: 350px;
   left: 150px;
 }
-.youtube .floating3 {
+
+/* SEASON PRODUCT */
+
+.season-product {
+  background-image: url('../images/season_product_bg.jpg');
+}
+.season-product .inner {
+  height: 400px;
+}
+
+.season-product .floating3 {
   position: absolute;
-  bottom: -200px;
+  top: -200px;
   right: 0;
+}
+.season-product .text-group {
+  position: absolute;
+  top: 110px;
+  right: 100px;
+}
+
+.season-product .text-group .title {
+  margin-bottom: 10px;
+}
+.season-product .text-group .description {
+  margin-bottom: 15px;
+}
+.season-product .text-group .more {
+}
+
+/* REASERVE COFFEE */
+
+.reserve-coffee {
+  background-image: url('../images/reserve_bg.jpg');
+}
+.reserve-coffee .inner {
+  height: 400px;
+}
+.reserve-coffee .reserve-logo {
+  position: absolute;
+  top: 110px;
+  left: 0;
+}
+.reserve-coffee .text-group {
+  position: absolute;
+  top: 124px;
+  left: 280px;
+}
+.reserve-coffee .product {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* PICK YOUR FAVORITE */
+.pick-your-favorite {
+  background-image: url('../images/favorite_bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.pick-your-favorite .inner {
+  padding: 110px 0;
+}
+.pick-your-favorite .inner .text-group {
+  margin-left: 100px;
+  display: flex;
+  width: 362px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.pick-your-favorite .inner .text-group .title {
+  margin-bottom: 40px;
+}
+.pick-your-favorite .inner .text-group .description {
+  margin-bottom: 40px;
+}
+
+/* RESERVE STORE */
+.reserve-store {
+  background-image: url('../images/reserve_store_bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.reserve-store .inner {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reserve-store .medal {
+  width: 334px;
+  height: 334px;
+  perspective: 600px;
+}
+
+.reserve-store .medal .front,
+.reserve-store .medal .back {
+  width: 334px;
+  height: 334px;
+  backface-visibility: hidden;
+  transition: 1s;
+}
+.reserve-store .medal .front {
+  position: absolute;
+  transform: rotateY(0deg);
+}
+.reserve-store .medal:hover .front {
+  transform: rotateY(180deg);
+}
+.reserve-store .medal .back {
+  position: absolute;
+  transform: rotateY(-180deg);
+}
+
+.reserve-store .medal:hover .back {
+  transform: rotateY(0deg);
+}
+.reserve-store .medal .back .btn {
+  position: absolute;
+  top: 240px;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
