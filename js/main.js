@@ -59,8 +59,21 @@ new Swiper('.promotion .swiper-container', {
     clickable: true, //사용자의 페이지 번호 요소를 제어할 수 있음
   },
   navigation: {
+    //화살표 사용유무
     prevEl: '.promotion .swiper-prev',
     nextEl: '.promotion .swiper-next',
+  },
+});
+
+new Swiper('.awards .swiper-container', {
+  direction: 'horizontal',
+  autoplay: true,
+  loop: true,
+  spaceBetween: 30,
+  slidesPerView: 5,
+  navigation: {
+    prevEl: '.awards .swiper-prev',
+    nextEl: '.awards .swiper-next',
   },
 });
 
@@ -106,3 +119,6 @@ spyEls.forEach(function (spyEl) {
     .setClassToggle(spyEl, 'show')
     .addTo(new ScrollMagic.Controller());
 });
+
+const thisYear = document.querySelector('.this-year');
+thisYear.textContent = new Date().getFullYear();
