@@ -20,15 +20,32 @@ searchInputEL.addEventListener('blur', function () {
 });
 
 const badgeEL = document.querySelector('header .badges');
+const toTopEl = document.querySelector('#to-top');
 
 window.addEventListener(
   'scroll',
   _.throttle(function () {
     if (window.scrollY > 500) {
       badgeEL.classList.add('active');
-    } else badgeEL.classList.remove('active');
+      //버튼  보이기
+      gsap.to(toTopEl, 0.2, {
+        x: 0,
+      });
+    } else {
+      badgeEL.classList.remove('active');
+      //버튼 숨기기
+      gsap.to(toTopEl, 0.2, {
+        x: 100,
+      });
+    }
   }, 300)
 );
+
+toTopEl.addEventListener('click', function () {
+  gsap.to(window, 0.7, {
+    scrollTo: 0,
+  });
+});
 
 const fadeEL = document.querySelectorAll('.visual .fade-in');
 fadeEL.forEach(function (fadeEL, index) {
