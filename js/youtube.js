@@ -15,6 +15,7 @@ function onYouTubeIframeAPIReady() {
       autoplay: true,
       loop: 1,
       playlist: 'An6LvWQuj_8', //반복 재생할  유튜브 영상  ID 목록
+      origin: 'http://127.0.0.1:5500',
     },
     events: {
       onReady: function (event) {
